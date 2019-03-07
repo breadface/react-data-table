@@ -1,0 +1,36 @@
+{
+  "name": "react-data-table",
+  "version": "1.0.0",
+  "description": "Custom React Data table",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "prepublish": "npm run build",
+    "test": "jest"
+  },
+  "author": "Omonori Jesmine <damilolao328@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.5",
+    "jest": "^22.4.3",
+    "react-dom": "^16.3.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
+  }
+}
